@@ -25,6 +25,21 @@ module.exports = function (grunt) {
       dist: 'dist'
     },
 
+    /**
+     * Install bower components from bower.json
+     */
+    bower: {
+        install: {
+            options: {
+                targetDir: 'app/bower_components',
+                install: true,
+                verbose: false,
+                cleanTargetDir: false,
+                cleanBowerDir: true
+            }
+        }
+    },
+
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       options: {
