@@ -6,7 +6,7 @@ var http = require('http');
 var parser = require('body-parser');
 var myReverse = require('./modules');
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/angular-tutorial/dist'));
 app.use(parser());
 
 app.get('/', function(req, res){
