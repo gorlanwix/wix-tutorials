@@ -18,4 +18,8 @@ app.post('/post', function(req, res) {
 	res.send(myReverse(req.body.myinput));
 });
 
+// app.get('/index', function(req,res) {
+// 	res.sendfile('index.html');
+// });
+
 module.exports = app;
