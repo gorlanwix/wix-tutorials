@@ -126,8 +126,8 @@ module.exports = function (grunt) {
           }
         ]
       },
-      server: '.tmp',
-      components: '<%= yeoman.dist %>/bower_components'
+      server: '.tmp'
+      // components: '<%= yeoman.dist %>/bower_components'
     },
 
     // Add vendor prefixed styles
