@@ -9,10 +9,6 @@ var myReverse = require('./modules');
 app.use(express.static(__dirname + '/angular-tutorial/dist'));
 app.use(parser());
 
-app.get('/', function(req, res){
-	res.send('Hello World');
-});
-
 app.post('/post', function(req, res) {
 	console.log(req.body);
 	res.send(myReverse(req.body.myinput));
