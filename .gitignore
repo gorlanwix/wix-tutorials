@@ -1,0 +1,18 @@
+node_modules
+angular-tutorial/node_modules
+angular-tutorial/app/bower_components
+dist
+.tmp
+.sass-cache
+app/bower_components
+test/coverage
+app/scripts/config.js
+.idea
+*.iml
+
+*.swp
+.DS_Store
+
+# Emacs temporary files
+.#*
+*#$
