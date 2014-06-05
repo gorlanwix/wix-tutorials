@@ -35,7 +35,7 @@ module.exports = function (grunt) {
                 install: true,
                 verbose: false,
                 cleanTargetDir: false,
-                cleanBowerDir: true
+                cleanBowerDir: false
             }
         }
     },
@@ -406,6 +406,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
+    'bower:install',
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
